@@ -17,7 +17,7 @@ To run the script:
 4. Press Ctrl+C to stop
 
 
-## ⚡ Quick Start
+## 🚀 Quick Start
 ```bash
 # Clone the repository
 git clone https://github.com/artcore-c/Christmas-CLI.git ~/Christmas
