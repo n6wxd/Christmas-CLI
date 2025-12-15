@@ -24,7 +24,7 @@ python3 Christmas_tree.py
 - ANSI color support
 - Terminal-width responsive
 - Smooth animations
-- Works on macOS, Linux, and Windows
+- Runs in any CLI on macOS, Linux, and Windows
 
 
 ## Want a custom terminal like ours?
