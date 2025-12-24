@@ -24,7 +24,32 @@ python3 Christmas_tree.py
 - ANSI color support
 - Terminal-width responsive
 - Smooth animations
+- Optional O Christmas Tree chiptune soundtrack (square-wave pulse channels)
 - Runs in any CLI on macOS, Linux, and Windows
+
+## 🎮 8-bit soundtrack
+
+The animation now includes a looping chiptune rendition of **“O Christmas Tree / O Tannenbaum”** synthesized from the [BitMidi arrangement](https://bitmidi.com/o-christmas-tree-mid). All melody, harmony, and bass voices are rendered as layered square waves on the fly and played with the default system audio tools:
+
+- macOS: `afplay`
+- Linux: first available from `aplay`, `paplay`, or `ffplay`
+- Windows: built-in `winsound`
+
+### Installing a CLI player
+
+- **macOS (Homebrew)**: `brew install ffmpeg` (installs `ffplay` if `afplay` is unavailable)
+- **Ubuntu / Debian**: `sudo apt install alsa-utils` (for `aplay`) or `sudo apt install pulseaudio-utils` (for `paplay`)
+- **Fedora / RHEL**: `sudo dnf install alsa-utils`
+- **Arch / Manjaro**: `sudo pacman -S alsa-utils`
+- **Windows**: no install required—the script uses the built-in `winsound` module.
+
+If your machine doesn’t have one of those command-line players, the script automatically falls back to the silent animation.
+
+Need quiet mode? Either set `CHRISTMAS_TREE_NO_AUDIO=1` or run
+
+```bash
+python3 Christmas_tree.py --no-music
+```
 
 
 ## Want a custom terminal like ours?
